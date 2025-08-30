@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CELL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">CELL 1.0</div>
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" class="search-input" id="search-input" placeholder="Search for movies....">
+            </div>
+            <div class="filters">
+                <select name="genre" id="by-genre">
+                    <option value="">ALL GENRE</option>
+                </select>
+                <select name="year" id="by-year">
+                    <option value="">ALL YEARS</option>
+                </select>
+                <select name="sort" id="sort">
+                    <option value="">SORT BY</option>
+                    <option value="popularity.desc">MOST POPULAR</option>
+                    <option value="vote_average.desc">HIGHEST RATED</option>
+                    <option value="release_date.desc">LATEST RELEASE</option>
+                    <option value="title.asc">A-Z</option>
+                </select>
+            </div>
+            <button class="clear-btn" id="clear-btn">CLEAR ALL FILTERS</button>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="trending-section" id="trendingSection">
+            <div class="section-title">
+                TRENDING NOW
+            </div>
+            <div class="carousel-container">
+                <button class="carousel-btn prev" id="carouselPrev">◀</button>
+                <div class="carousel" id="trendingCarousel">
+                    <div class="loading">
+                        LOADING TRENDING CAROUSEL....
+                    </div>
+                </div>
+                <button class="carousel-btn next" id="carouselNext">▶</button>
+            </div>
+        </div>
+
+        <div class="section-title" id="movieGridTitle">DISCOVER MOVIES</div>
+        <div class="movie-grid" id="movieGrid">
+            <div class="loading">
+                LOADING MOVIES ......
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
